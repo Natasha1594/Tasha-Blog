@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<body style="background-image: url('https://getwallpapers.com/wallpaper/full/e/7/b/194504.jpg')">
+	<h3 style="font-size: 60px; font-family: 'Apple Chancery', cursive;  padding-top: 70px; padding-bottom:70px; text-align: center;" class="text-default">Welcome to Tasha Blog, here are some of random quotes that you will make your day Awesome.</h3>
+<p style="font-size: 20px; font-family: 'Charm', cursive;text-align: center; color: black" >(Refresh the page to view other quotes)</p>
+<hr>
+<div style="font-size: 20px; font-family: 'Merienda', cursive;  padding-top: 40px; text-align: center;">
+    {% for quote in getquotes %}
+    <p style="color: white">{{quote.quote}}</p>
+    <p style="color: black"> By: {{quote.author}}</p>
+    {% endfor %}
+
+</div>
+</body>
+
+
+{% endblock %}
