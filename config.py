@@ -1,5 +1,5 @@
 import os
-
+##configurations
 class Config:
 
     QUOTE_API_BASE_URL ='http://quotes.stormconsultancy.co.uk/random.json'
