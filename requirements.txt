@@ -6,7 +6,7 @@ attrs==18.1.0
 backcall==0.1.0
 bcrypt==3.1.7
 blinker==1.4
-Brlapi==0.7.0
+Brlapi
 certifi==2019.11.28
 chardet==3.0.4
 click==7.1.2
