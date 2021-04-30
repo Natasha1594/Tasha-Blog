@@ -5,7 +5,7 @@ class Config:
     QUOTE_API_BASE_URL ='http://quotes.stormconsultancy.co.uk/random.json'
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://natasha:natasha@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgres://wndbojhqkiiyek:a29346c05fb07d9efe91783783e33cb48b8ab5dff4e265286a0c048510aa7f88@ec2-54-163-254-204.compute-1.amazonaws.com:5432/d4h31g4gsvd4of'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     UPLOADED_PHOTOS_DEST ='app/static/photos'
@@ -17,7 +17,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://natasha:natasha@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgres://wndbojhqkiiyek:a29346c05fb07d9efe91783783e33cb48b8ab5dff4e265286a0c048510aa7f88@ec2-54-163-254-204.compute-1.amazonaws.com:5432/d4h31g4gsvd4of'
     DEBUG = True
 
 class ProdConfig(Config):
